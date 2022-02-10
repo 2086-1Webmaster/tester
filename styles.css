@@ -51,7 +51,7 @@ body {
 	width: 50%;
 	height: 100%;
 	filter: brightness(180%);
-	background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/stage-curtain-red-velvet-mlenny.jpg");
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/950358/curtain.svg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -73,15 +73,13 @@ body {
 	height: 10000px;
 	margin-left: -5000px;
 	border-radius: 100%;
-	box-shadow: 0 0 100px 100px white;
+	box-shadow: 0 0 100px 100px #d64949;
 }
 
 h1 {
-	
+	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 10em;
-	color: white;
-	transform: scale(0.75);
+	color: #ff7a7a;
 	opacity: 0;
 }
 
@@ -212,10 +210,6 @@ h1 {
 	to { top: 105%; }
 }
 
-@keyframes text-zoom {
-	from { transform: scale(0.75); }
-	to { transform: scale(1); }
-}
 
 @keyframes text-fade-in {
 	from { opacity: 0; }
@@ -223,8 +217,8 @@ h1 {
 }
 
 @keyframes text-glowing {
-	from { text-shadow: 0 0 10px white; }
-	to { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px dodgerblue; }
+	from { text-shadow: 0 0 10px #ff7a7a; }
+	to { text-shadow: 0 0 10px #ff7a7a, 0 0 20px #ff7a7a, 0 0 30px #fc4f4f; }
 }
 
 @keyframes fade-out {
